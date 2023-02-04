@@ -15,7 +15,7 @@ body {
     gap: 10px;
     height: 100vh;
     overflow: auto;
-    padding: 0px;
+    padding: 100px;
     position: relative;
 }
 

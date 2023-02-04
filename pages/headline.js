@@ -13,7 +13,7 @@ const Home = () => {
     setIsGenerating(true);
     console.log("Calling OpenAI...")
     // next.jsなので自動ルーティング
-    const response = await fetch('/api/generate', {
+    const response = await fetch('/api/generate_chain', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -45,14 +45,13 @@ const Home = () => {
             <h1>create blog articles</h1>
           </div>
           <div className="header-subtitle">
-            <h2>利点と欠点について</h2>
+            <h2>見出しから詳細まで</h2>
           </div>
-          <Link href="/headline" legacyBehavior>
-            <a>👉より詳細な記事が描きたい場合</a>
+          <Link href="/" legacyBehavior>
+            <a>👉home</a>
           </Link>
         </div>
       </div>
-    
       <div className="prompt-container">
         <textarea
           className="prompt-box"
